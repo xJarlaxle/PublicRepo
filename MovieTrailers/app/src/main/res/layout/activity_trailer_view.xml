@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b3b3b3"
+    tools:context="com.example.jarlaxle.movietrailers.TrailerView">
+
+    <!--android:name="com.google.android.youtube.player.YouTubePlayerFragment"-->
+    <fragment
+        android:name="com.google.android.youtube.player.YouTubePlayerSupportFragment"
+        android:id="@+id/my_youtube_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtMovieName"
+        android:layout_below="@+id/my_youtube_fragment"
+        android:layout_marginTop="5dp"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rtngBrMovieTrailerRating"
+        android:layout_below="@+id/txtMovieName"
+        android:layout_alignParentLeft="true"
+        android:numStars="5"
+        android:rating="-1"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:isIndicator="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtMovieDescription"
+        android:layout_below="@+id/rtngBrMovieTrailerRating"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtMovieDescription"
+        android:text="@string/backBtn" />
+
+    <Button
+        android:id="@+id/deleteTrailerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/backBtn"
+        android:layout_alignBottom="@+id/backBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="#FF0000"
+        android:text="@string/deleteTrailerBtn" />
+</RelativeLayout>

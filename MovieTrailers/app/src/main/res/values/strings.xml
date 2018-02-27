@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Movie Trailers</string>
+    <string name="title">Add Trailer</string>
+    <string name="yt_id">YouTube ID</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="actuallyAddTrailerBtn">Add Trailer</string>
+    <string name="viewData">View Data</string>
+    <string name="updateBtn">Update</string>
+    <string name="id">ID</string>
+    <string name="deleteDataBtn">Delete</string>
+    <string name="addTrailerBtn">Add Trailer</string>
+    <string name="backBtn">Back</string>
+    <string name="deleteTrailerBtn">Remove</string>
+</resources>
